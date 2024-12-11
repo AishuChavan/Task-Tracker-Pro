@@ -1,0 +1,36 @@
+
+
+[
+    {
+      "id": 1,
+      "title": "Create Tasks",
+      "description": "Easily create tasks with a user-friendly form and assign them to categories."
+      
+    },
+    {
+      "id": 2,
+      "title": "Edit Tasks",
+      "description": "Edit existing tasks to update their details."
+      
+    },
+    {
+      "id": 3,
+      "title": "Search & Filter",
+      "description": "Quickly find tasks with search and filter options."
+      
+    },
+    {
+      "id": 4,
+      "title": "Categories Management",
+      "description": "Organize your tasks into manageable categories."
+      
+    },
+    {
+      "id": 5,
+      "title": "Authentication Guard",
+      "description": "Secure task-related pages with login authentication."
+      
+    }
+  ]
+
+  

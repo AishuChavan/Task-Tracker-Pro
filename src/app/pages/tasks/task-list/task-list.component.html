@@ -1,0 +1,32 @@
+<div class="mt-16">
+    <form>
+    <button type="submit" (click)="onSubmit()">ADD TASK</button>
+    </form>
+<table>
+    
+    <tr *ngFor="let task of taskData">
+        
+        <td>
+            {{task.title}}
+        </td>
+        <td>
+            {{task.completed ?'Completed':'Pending'}}
+        </td>
+        <td>
+            <button (click)="onClickView(task.id)">View</button>
+        </td>
+        <td>
+            <button (click)="onClickEdit(task.id)">Edit</button>
+        </td>
+        <td>
+            <input type="checkbox"
+             [checked]="task?.completed" 
+             (change)="onTaskStatusChange(task.id,checkBox.checked)" 
+             id="check"
+             #checkBox>
+        </td>
+    </tr>
+</table>
+</div>
+
+

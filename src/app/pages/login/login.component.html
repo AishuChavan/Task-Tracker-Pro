@@ -1,0 +1,35 @@
+<!-- loginform -->
+
+<div class="mt-16">
+    <form>
+        <div>
+            <label for="firstName"> FirstName:</label>
+            <input type="text" [(ngModel)]="loginObj.firstName" id="firstName" name="firstName" placeholder="Enter your firstname here...">
+            
+            <label for="lastName"> LastName:</label>
+            <input type="text" [(ngModel)]="loginObj.lastName" id="lastName" name="lastName" placeholder="Enter your lastname here...">
+
+        </div>
+        <div>
+            <label for="email"> Email-Id:</label>
+            <input type="email" [(ngModel)]="loginObj.emailId" id="email" name="email" placeholder="abc@gmail.com">
+            
+            <label for="password"> Password:</label>
+            <input type="text"  [(ngModel)]="loginObj.password" id="password" name="password">
+        </div>
+        <div>
+            <label for="address"> Address:</label>
+            <input type="textarea"  [(ngModel)]="loginObj.address" id="address" name="address" placeholder="A/P abc..">
+
+            <label for="position">Position:</label>
+            <select id="position" name="position" [(ngModel)]="loginObj.position">
+                <option value="Student" >Student</option>
+                <option value="Developer" >Developer</option>
+                <option value="Parent" >Parent</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit" (click)="submitHandler()">Submit</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<div class="mt-16">
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+        <label for="title">Title</label>
+        <input type="text" formControlName="title"  id="title">
+        <label for="Completed">Completed</label>
+        <input type="checkbox" formControlName="completed" id="completed" />
+        <button type="submit" [disabled]="editForm.invalid">
+            Updated Task
+        </button>
+    </form>
+</div>
